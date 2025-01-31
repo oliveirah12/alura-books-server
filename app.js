@@ -3,7 +3,7 @@ const rotaLivro = require("./rotas/livro")
 
 const app = express()
 
-app.use('/livros', rotaLivro)
+app.use('/', rotaLivro)
 
 const port = 8000
 

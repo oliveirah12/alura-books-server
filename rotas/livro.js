@@ -3,11 +3,11 @@ const { getLivros, getLivro, postLivro, patchLivro, DeleteLivro } = require("./.
 
 const router = Router()
 
-router.get('/livros', getLivros)
-router.get('/livro/:id', getLivro)
-router.post('/livro', postLivro)
-router.patch('/livro/:id', patchLivro)
-router.delete('/livro/:id', DeleteLivro)
+router.get('/', getLivros)
+router.get('/:id', getLivro)
+router.post('/', postLivro)
+router.patch('/:id', patchLivro)
+router.delete('/:id', DeleteLivro)
 
 router.post('/', (req, res) => {
     res.send('Aqui foi POST')

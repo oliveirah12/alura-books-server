@@ -29,7 +29,7 @@ function deleteFavorito(req, res){
     try{
         const id = req.params.id
         if(id && Number(id)){
-            deletaFavoritoPorId()
+            deletaFavoritoPorId(id)
             res.send("Favorito Excluído") 
         } else{
             res.status(422)
